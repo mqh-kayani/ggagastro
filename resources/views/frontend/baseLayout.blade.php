@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="{{asset('frontend/css/style.css')}}">
     <link rel="stylesheet" href="{{asset('frontend/js/owl-carousel/owl.carousel.css')}}">
     <link rel="stylesheet" href="{{asset('frontend/js/owl-carousel/owl.theme.css')}}">
-    <link rel="shortcut icon" href="{{asset('frontend/images/favicon.ico')}}">
     <!-- META TAGS -->
     <meta name="viewport" content="width=device-width" />
 </head>
