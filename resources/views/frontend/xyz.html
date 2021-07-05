@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GGAGastro</title>
+    <link rel="stylesheet" href="{{asset('frontend/css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{asset('frontend/css/fontawesome.css')}}">
+    <link rel="stylesheet" src="{{asset('frontend/css/slick.css')}}">
+    <link rel="stylesheet" src="{{asset('frontend/css/slick-theme.css')}}">
+    <link rel="stylesheet" href="{{asset('frontend/css/styles.css')}}">
+</head>
+<body>
+<header>
+    <div class="container-fluid" id="top-bar">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-12 col-12" style="max-height: 40px !important;">
+                <ul class="list-inline py-2 mx-5">
+                    <li class="list-inline-item">
+                        <div class="dropdown">
+                            <a href="#" class="dropbtn">Language: Danish <img src="{{asset('frontend/images/flags/danish.png')}}"></a>
+                            <div class="dropdown-content">
+                                <a href="#">
+                                    <span class="float-left">English</span>
+                                    <span class="float-right">
+                            <img src="{{asset('frontend/images/flags/English.png')}}">
+                        </span>
+                                </a>
+                                <a href="#">
+                                    <span class="float-left">German</span>
+                                    <span class="float-right">
+                            <img src="{{asset('frontend/images/flags/German.png')}}">
+                        </span>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-inline-item">
+                        <div class="dropdown">
+                            <a href="#" class="dropbtn">Currency: DKK</a>
+                            <div class="dropdown-content">
+                                <a href="#"><small>GBP - British Pound</small></a>
+                                <a href="#"><small>BGN - Bulgarian lev</small></a>
+                                <a href="#"><small>EUR - Euro</small></a>
+                                <a href="#"><small>NOK - Norwegian krone</small></a>
+                                <a href="#"><small>PLN - Polish Zloty</small></a>
+                                <a href="#"><small>RON - Romanian leu</small></a>
+                                <a href="#"><small>RUB - Russian ruble</small></a>
+                                <a href="#"><small>SEK - Swedish krona</small></a>
+                                <a href="#"><small>HUF - Hungarian forint</small></a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12 col-12" style="max-height: 40px !important;">
+                <ul class="list-inline float-right py-2 mx-5">
+                    <li class="list-inline-item">
+                        <a href="#"><img src="{{asset('frontend/images/whatsapp.png')}}"></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#"><img src="{{asset('frontend/images/email.png')}}"></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <div class="dropdown">
+                            <a href="#" class="dropbtn"><img src="{{asset('frontend/images/user.png')}}"></a>
+                            <div class="dropdown-content-2">
+                                <div class="card px-5">
+                                    <div class="card-title">Log In</div>
+                                    <div class="card-body">
+                                        <form>
+
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#"><img src="{{asset('frontend/images/cart.png')}}"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <div class="container-fluid" id="top-logo-div">
+        <div class="row mx-4">
+            <div class="col-lg-3 col-md-6 col-sm-12 col-12 my-auto">
+                <img src="{{asset('frontend/images/ggagastro.png')}}" class="img-fluid">
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12 my-auto">
+                <form id="top-search-form" class="form-inline">
+                    <div class="form-group" id="search-form-group">
+                        <input type="text" class="form-control" placeholder="Search Your Desired Items">
+                        <button class="btn btn-info">Search</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <ul class="list-inline py-2 mx-5" id="xyz" style="background-color: #FF4500">
+            <li class="list-inline-item">
+                <div class="dropdown text-wrapper-X">
+                    <a href="#" class="dropbtn" style="color: #000000 !important;"><img src="{{asset('frontend/images/bussinessform.png')}}"> Bussiness Form</a>
+                    <div class="dropdown-content">
+                        <a href="#">
+                            <span class="float-left">English</span>
+                            <span class="float-right">
+                            <img src="{{asset('frontend/images/flags/English.png')}}">
+                        </span>
+                        </a>
+                        <a href="#">
+                            <span class="float-left">German</span>
+                            <span class="float-right">
+                            <img src="{{asset('frontend/images/flags/German.png')}}">
+                        </span>
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li class="list-inline-item">
+                <div class="dropdown text-wrapper-X">
+                    <a href="#" class="dropbtn text-wrapper-X" style="color: #000000 !important;"><img src="{{asset('frontend/images/bussinessform.png')}}"> Kitchen utensils
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="#">
+                            <span class="float-left">English</span>
+                            <span class="float-right">
+                            <img src="{{asset('frontend/images/flags/English.png')}}">
+                        </span>
+                        </a>
+                        <a href="#">
+                            <span class="float-left">German</span>
+                            <span class="float-right">
+                            <img src="{{asset('frontend/images/flags/German.png')}}">
+                        </span>
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li class="list-inline-item">
+                <div class="dropdown text-wrapper-X">
+                    <a href="#" class="dropbtn text-wrapper-X" style="color: #000000 !important;"><img src="{{asset('frontend/images/bussinessform.png')}}"> Pizzeria / grill
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="#">
+                            <span class="float-left">English</span>
+                            <span class="float-right">
+                            <img src="{{asset('frontend/images/flags/English.png')}}">
+                        </span>
+                        </a>
+                        <a href="#">
+                            <span class="float-left">German</span>
+                            <span class="float-right">
+                            <img src="{{asset('frontend/images/flags/German.png')}}">
+                        </span>
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li class="list-inline-item">
+                <div class="dropdown text-wrapper-X">
+                    <a href="#" class="dropbtn text-wrapper-X" style="color: #000000 !important;"><img src="{{asset('frontend/images/bussinessform.png')}}"> Stainless steel furniture
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="#">
+                            <span class="float-left">English</span>
+                            <span class="float-right">
+                            <img src="{{asset('frontend/images/flags/English.png')}}">
+                        </span>
+                        </a>
+                        <a href="#">
+                            <span class="float-left">German</span>
+                            <span class="float-right">
+                            <img src="{{asset('frontend/images/flags/German.png')}}">
+                        </span>
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li class="list-inline-item">
+                <div class="dropdown text-wrapper-X">
+                    <a href="#" class="dropbtn text-wrapper-X" style="color: #000000 !important;"><img src="{{asset('frontend/images/bussinessform.png')}}"> Refrigerate / Freeze
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="#">
+                            <span class="float-left">English</span>
+                            <span class="float-right">
+                            <img src="{{asset('frontend/images/flags/English.png')}}">
+                        </span>
+                        </a>
+                        <a href="#">
+                            <span class="float-left">German</span>
+                            <span class="float-right">
+                            <img src="{{asset('frontend/images/flags/German.png')}}">
+                        </span>
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li class="list-inline-item">
+                <div class="dropdown text-wrapper-X">
+                    <a href="#" class="dropbtn text-wrapper-X" style="color: #000000 !important;"><img src="{{asset('frontend/images/bussinessform.png')}}"> Combi / Convection oven
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="#">
+                            <span class="float-left">English</span>
+                            <span class="float-right">
+                            <img src="{{asset('frontend/images/flags/English.png')}}">
+                        </span>
+                        </a>
+                        <a href="#">
+                            <span class="float-left">German</span>
+                            <span class="float-right">
+                            <img src="{{asset('frontend/images/flags/German.png')}}">
+                        </span>
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li class="list-inline-item">
+                <div class="dropdown text-wrapper-X">
+                    <a href="#" class="dropbtn text-wrapper-X" style="color: #000000 !important;"><img src="{{asset('frontend/images/bussinessform.png')}}"> Kitchen utensils
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="#">
+                            <span class="float-left">English</span>
+                            <span class="float-right">
+                            <img src="{{asset('frontend/images/flags/English.png')}}">
+                        </span>
+                        </a>
+                        <a href="#">
+                            <span class="float-left">German</span>
+                            <span class="float-right">
+                            <img src="{{asset('frontend/images/flags/German.png')}}">
+                        </span>
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li class="list-inline-item">
+                <div class="dropdown text-wrapper-X">
+                    <a href="#" class="dropbtn text-wrapper-X" style="color: #000000 !important;"><img src="{{asset('frontend/images/bussinessform.png')}}"> Pots and pans
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="#">
+                            <span class="float-left">English</span>
+                            <span class="float-right">
+                            <img src="{{asset('frontend/images/flags/English.png')}}">
+                        </span>
+                        </a>
+                        <a href="#">
+                            <span class="float-left">German</span>
+                            <span class="float-right">
+                            <img src="{{asset('frontend/images/flags/German.png')}}">
+                        </span>
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li class="list-inline-item">
+                <div class="dropdown text-wrapper-X">
+                    <a href="#" class="dropbtn text-wrapper-X" style="color: #000000 !important;"><img src="{{asset('frontend/images/bussinessform.png')}}"> Clothing</a>
+                    <div class="dropdown-content">
+                        <a href="#">
+                            <span class="float-left">English</span>
+                            <span class="float-right">
+                            <img src="{{asset('frontend/images/flags/English.png')}}">
+                        </span>
+                        </a>
+                        <a href="#">
+                            <span class="float-left">German</span>
+                            <span class="float-right">
+                            <img src="{{asset('frontend/images/flags/German.png')}}">
+                        </span>
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li class="list-inline-item">
+                <div class="dropdown text-wrapper-X">
+                    <a href="#" class="dropbtn text-wrapper-X" style="color: #000000 !important;"><img src="{{asset('frontend/images/bussinessform.png')}}"> Ventilation
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="#">
+                            <span class="float-left">English</span>
+                            <span class="float-right">
+                            <img src="{{asset('frontend/images/flags/English.png')}}">
+                        </span>
+                        </a>
+                        <a href="#">
+                            <span class="float-left">German</span>
+                            <span class="float-right">
+                            <img src="{{asset('frontend/images/flags/German.png')}}">
+                        </span>
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li class="list-inline-item">
+                <div class="dropdown text-wrapper-X">
+                    <a href="#" class="dropbtn text-wrapper-X" style="color: #000000 !important;"><img src="{{asset('frontend/images/bussinessform.png')}}"> Kitchen appliances
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="#">
+                            <span class="float-left">English</span>
+                            <span class="float-right">
+                            <img src="{{asset('frontend/images/flags/English.png')}}">
+                        </span>
+                        </a>
+                        <a href="#">
+                            <span class="float-left">German</span>
+                            <span class="float-right">
+                            <img src="{{asset('frontend/images/flags/German.png')}}">
+                        </span>
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li class="list-inline-item">
+                <div class="dropdown text-wrapper-X">
+                    <a href="#" class="dropbtn text-wrapper-X" style="color: #000000 !important;"><img src="{{asset('frontend/images/bussinessform.png')}}"> Keep warm
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="#">
+                            <span class="float-left">English</span>
+                            <span class="float-right">
+                            <img src="{{asset('frontend/images/flags/English.png')}}">
+                        </span>
+                        </a>
+                        <a href="#">
+                            <span class="float-left">German</span>
+                            <span class="float-right">
+                            <img src="{{asset('frontend/images/flags/German.png')}}">
+                        </span>
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li class="list-inline-item">
+                <div class="dropdown text-wrapper-X">
+                    <a href="#" class="dropbtn text-wrapper-X" style="color: #000000 !important;"><img src="{{asset('frontend/images/bussinessform.png')}}"> Dishwashing / Washing
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="#">
+                            <span class="float-left">English</span>
+                            <span class="float-right">
+                            <img src="{{asset('frontend/images/flags/English.png')}}">
+                        </span>
+                        </a>
+                        <a href="#">
+                            <span class="float-left">German</span>
+                            <span class="float-right">
+                            <img src="{{asset('frontend/images/flags/German.png')}}">
+                        </span>
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li class="list-inline-item">
+                <div class="dropdown text-wrapper-X">
+                    <a href="#" class="dropbtn text-wrapper-X" style="color: #000000 !important;"><img src="{{asset('frontend/images/bussinessform.png')}}"> Cooling cases
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="#">
+                            <span class="float-left">English</span>
+                            <span class="float-right">
+                            <img src="{{asset('frontend/images/flags/English.png')}}">
+                        </span>
+                        </a>
+                        <a href="#">
+                            <span class="float-left">German</span>
+                            <span class="float-right">
+                            <img src="{{asset('frontend/images/flags/German.png')}}">
+                        </span>
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li class="list-inline-item">
+                <div class="dropdown text-wrapper-X">
+                    <a href="#" class="dropbtn text-wrapper-X" style="color: #000000 !important;"><img src="{{asset('frontend/images/bussinessform.png')}}"> Cafeteria / is
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="#">
+                            <span class="float-left">English</span>
+                            <span class="float-right">
+                            <img src="{{asset('frontend/images/flags/English.png')}}">
+                        </span>
+                        </a>
+                        <a href="#">
+                            <span class="float-left">German</span>
+                            <span class="float-right">
+                            <img src="{{asset('frontend/images/flags/German.png')}}">
+                        </span>
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li class="list-inline-item">
+                <div class="dropdown text-wrapper-X">
+                    <a href="#" class="dropbtn text-wrapper-X" style="color: #000000 !important;"><img src="{{asset('frontend/images/bussinessform.png')}}"> Kitchen equipment
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="#">
+                            <span class="float-left">English</span>
+                            <span class="float-right">
+                            <img src="{{asset('frontend/images/flags/English.png')}}">
+                        </span>
+                        </a>
+                        <a href="#">
+                            <span class="float-left">German</span>
+                            <span class="float-right">
+                            <img src="{{asset('frontend/images/flags/German.png')}}">
+                        </span>
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li class="list-inline-item">
+                <div class="dropdown text-wrapper-X">
+                    <a href="#" class="dropbtn text-wrapper-X" style="color: #000000 !important;"><img src="{{asset('frontend/images/bussinessform.png')}}"> Set table
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="#">
+                            <span class="float-left">English</span>
+                            <span class="float-right">
+                            <img src="{{asset('frontend/images/flags/English.png')}}">
+                        </span>
+                        </a>
+                        <a href="#">
+                            <span class="float-left">German</span>
+                            <span class="float-right">
+                            <img src="{{asset('frontend/images/flags/German.png')}}">
+                        </span>
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li class="list-inline-item">
+                <div class="dropdown text-wrapper-X">
+                    <a href="#" class="dropbtn" style="color: #000000 !important;"><img src="{{asset('frontend/images/bussinessform.png')}}"> Furniture - Germany
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="#">
+                            <span class="float-left">English</span>
+                            <span class="float-right">
+                            <img src="{{asset('frontend/images/flags/English.png')}}">
+                        </span>
+                        </a>
+                        <a href="#">
+                            <span class="float-left">German</span>
+                            <span class="float-right">
+                            <img src="{{asset('frontend/images/flags/German.png')}}">
+                        </span>
+                        </a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</header>
+<main class="container-fluid">
+    <div class="row">
+        <div class="col-lg-8 col-md-8 col-sm-12 col-12">
+            <div  class="slider demo">
+                <div>
+                    <img src="{{asset('frontend/images/xyz.jpg')}}" style="width: 100% !important;">
+                </div>
+                <div>
+                    <img src="{{asset('frontend/images/xyz.jpg')}}" style="width: 100% !important;">
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<script type="text/javascript" src="{{asset('frontend/js/jquery-3.6.0.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('frontend/js/bootstrap.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('frontend/js/slick.js')}}"></script>
+<script type="text/javascript" src="{{asset('frontend/js/scripts.js')}}"></script>
+</body>
+</html>
